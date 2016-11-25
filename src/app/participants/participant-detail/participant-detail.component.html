@@ -1,0 +1,28 @@
+<div class="container pt-1">
+  <article *ngIf="participant">
+    <section class="image text-xs-center">
+      <img class="rounded-circle img-fluid" [src]="participant.image" [alt]="participant.name | locale" />
+    </section>
+    <section class="information text-xs-center">
+      <header class="name">
+        <h1>{{ participant.name | locale }}</h1>
+      </header>
+      <section class="email">
+        <h3 class="font-italic">{{ participant.email }}</h3>
+      </section>
+    </section>
+  </article>
+</div>
+<app-participant-programs [programs]="participant.programs"></app-participant-programs>
+
+<!--<div *ngIf="participant" class="container">
+  <div class="row introduce-artist">
+    <div class="col-xs-8 offset-xs-2 col-sm-4 offset-sm-4 col-md-4 offset-md-4 col-lg-4 offset-lg-4 profile_image">
+      <img class="img-fluid img-circle" [src]="participant.image" [alt]="participant.name | locale" />
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <p class="artist-name">{{ participant.name | locale }}</p>
+      <p class="artist-email">{{ participant.email }}</p>
+    </div>
+  </div>
+</div>-->

@@ -1,0 +1,26 @@
+<div [mnFullpage]="mnFullpageOptions">
+  <section class="fp-section">
+    <div class="theme-image img-fluid"></div>
+  </section>
+  <section class="fp-section">
+    <div class="embed-responsive embed-responsive-16by9">
+      <div class="video-overlay w-100 h-100 hidden-md hidden-lg"></div>
+      <!--<app-youtube-video data-autoplay [videoId]="data.youtube.videoId"></app-youtube-video>-->
+      <iframe data-autoplay class="embed-responsive-item" src="//www.youtube.com/embed/GKSRyLdjsPA?autoplay=0&showinfo=0&controls=0" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section class="fp-section">
+    <div class="container py-3">
+      <div class="col-lg-6 col-md-12 col-sm-12 mb-1">
+        <img [src]="data.catalogue.image.url" [alt]="data.catalogue.image.text | locale" class="img-fluid">
+      </div>
+      <section class="catalogue col-lg-6">
+        <h2>{{ data.catalogue.title | locale }}</h2>
+        <div *ngFor="let content of (data.catalogue.description | locale)" class="description text-justify">{{ content }}</div>
+        <a [href]="data.catalogue.request.link" target="_blank">
+          <button type="button" name="button" class="btn btn-primary btn-link float-xs-right">{{ data.catalogue.request.text | locale }}</button>
+        </a>
+      </section>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,13 @@
+@import '../../scss/common';
+
+.information {
+  padding: 5% 2.5%;
+
+  .description {
+    max-width: $information-max-width;
+
+    p {
+      line-height: 1.7;
+    }
+  }
+}

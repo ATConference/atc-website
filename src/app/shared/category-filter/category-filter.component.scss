@@ -1,0 +1,46 @@
+@import '../../scss/common';
+
+.navbar {
+  margin-top: $navbar-size;
+}
+
+@include media-breakpoint-up(sm) {
+  .navbar {
+    margin-top: $navbar-sm-up-size;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  .navbar {
+    padding: 10px 0;
+    line-height: 30px;
+  }
+}
+
+.bg-faded {
+  background-color: rgba(245, 245, 245, 0.95);
+}
+
+.navbar button {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.nav-item {
+  .nav-link {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    color: #777;
+    cursor: pointer;
+  }
+
+  &.active .nav-link {
+    font-weight: 500;
+    color: #555;
+  }
+}

@@ -1,0 +1,70 @@
+@import '../../scss/common';
+
+.footer {
+  background: #222;
+  color: #888;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.col {
+  th {
+    padding-right: 2rem;
+    padding-top: 2px;
+    color: #888;
+    font-weight: normal;
+  }
+
+  td {
+    margin-top: 2px;
+  }
+
+  > div {
+    margin: 30px 0;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .footer {
+    padding-top: 5px;
+  }
+}
+
+.logos img {
+  max-width: 140px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+#sponsored img {
+  opacity: 0.5;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: $line-height-base;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+#describe h5,
+#contact h5 {
+  color: #fff;
+}
+
+#describe p {
+  margin: 0 15px 10px 0;
+}
+
+#contact {
+  margin-bottom: 30px;
+}
+
+#madeby p {
+  margin-bottom: 5px;
+}
+
+#copyright {
+  margin-top: 20px;
+}

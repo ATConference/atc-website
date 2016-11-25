@@ -4,8 +4,9 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.conf.json",
     "lint": "tslint \"src/**/*.ts\"",
+    "stylelint": "stylelint \"src/**/*.css\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor"
@@ -20,7 +21,12 @@
     "@angular/platform-browser": "2.2.1",
     "@angular/platform-browser-dynamic": "2.2.1",
     "@angular/router": "3.2.1",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.13",
+    "bootstrap": "^4.0.0-alpha.5",
     "core-js": "^2.4.1",
+    "ng2-fullpage": "^2.0.4",
+    "ng2-translate": "^4.0.0",
+    "normalize.css": "^5.0.0",
     "rxjs": "5.0.0-beta.12",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.6.23"
@@ -28,6 +34,7 @@
   "devDependencies": {
     "@angular/compiler-cli": "2.2.1",
     "@types/jasmine": "2.5.38",
+    "@types/jquery": "^2.0.34",
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.21",
     "codelyzer": "~1.0.0-beta.3",
@@ -39,6 +46,8 @@
     "karma-jasmine": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
     "protractor": "4.0.9",
+    "stylelint": "^7.6.0",
+    "stylelint-config-standard": "^15.0.0",
     "ts-node": "1.2.1",
     "tslint": "3.13.0",
     "typescript": "~2.0.3",

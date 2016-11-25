@@ -1,0 +1,14 @@
+<div class="wrapper py-2">
+  <div class="container">
+    <section *ngIf="programs">
+      <header class="mb-2">
+        <h1>{{ 'PARTICIPANT.PROGRAMS' | translate }}</h1>
+      </header>
+      <div class="row">
+        <div *ngFor="let program of programs" class="col-xs-12 col-sm-4 col-md-4">
+          <app-participant-program [program]="program"></app-participant-program>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

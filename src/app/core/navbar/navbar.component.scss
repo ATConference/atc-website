@@ -1,0 +1,94 @@
+@import '../../scss/common';
+
+.navbar-text {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.navbar {
+  z-index: 1040;
+}
+
+.navbar-brand {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.navbar-nav {
+  padding-top: 16px;
+}
+
+.nav-link {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@include media-breakpoint-up(sm) {
+  header {
+    padding-right: 0;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .navbar {
+    padding-right: 0;
+  }
+
+  .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: -20px;
+  }
+}
+
+.logo {
+  background-image: url(/assets/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 100px;
+}
+
+a {
+  color: #767676;
+  text-decoration: none;
+
+  &:hover,
+  &:link,
+  &:visited,
+  &:active {
+    color: #767676;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: black;
+  }
+}
+
+.bg-faded {
+  background-color: #fff;
+}
+
+.navbar.alternative {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: inherit;
+
+  .logo {
+    background-image: url(/assets/logo-alternative.png);
+  }
+
+  a {
+    color: #fff;
+
+    &:hover,
+    &:link,
+    &:visited,
+    &:active {
+      color: #fff;
+    }
+  }
+}

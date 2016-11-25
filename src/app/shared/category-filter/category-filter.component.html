@@ -1,0 +1,12 @@
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+  <div class="container">
+    <button [ngClass]="{collapsed: isCollapsed}" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" class="dropdown-toggle hidden-sm-up" type="button" aria-controls="navbar-header" aria-label="Toggle navigation">{{ selected.name | locale }}</button>
+    <div [ngbCollapse]="isCollapsed" class="navbar-toggleable-xs" id="navbar-header">
+        <ul class="nav navbar-nav">
+          <li [ngClass]="{'active': isSelectedCategory(category)}" *ngFor="let category of categories" class="nav-item">
+            <a (click)=select(category) class="nav-link">{{ category.name | locale }}</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>

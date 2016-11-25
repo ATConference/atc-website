@@ -1,0 +1,69 @@
+@import '../../scss/common';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.introduction {
+  color: white;
+
+  header {
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .wrapper {
+    background-image: url(/assets/background2.png);
+    background-position: 50% 30%;
+  }
+}
+
+.theme-introduction {
+  color: #767676;
+
+  header {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .wrapper {
+    background-image: url(/assets/background1.png);
+    background-position: 50% 35%;
+  }
+}
+
+.letter {
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .signature {
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+}
+
+p {
+  line-height: 1.8;
+}
+
+@include media-breakpoint-up(xs) {
+  p {
+    line-height: 1.7;
+  }
+}

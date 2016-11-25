@@ -1,0 +1,48 @@
+<div>
+  <section class="introduction">
+    <div class="wrapper">
+      <div class="container">
+        <article class="py-2">
+          <header>
+            <h3 class="text-xs-center">{{ data.about.title | locale }}</h3>
+          </header>
+          <p *ngFor="let content of (data.about.content | locale)" class="mt-2 text-justify">{{ content }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="theme-introduction">
+    <div class="wrapper">
+      <div class="container">
+        <article class="py-2">
+          <header>
+            <h3>{{ data.atc2016.title | locale }}</h3>
+          </header>
+          <p *ngFor="let content of (data.atc2016.content | locale)" class="mt-2 text-justify">{{ content }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <section class="history col-lg-6 col-md-6">
+            <a routerLink="/archives">
+              <img [src]="data.history.image" class="img-fluid">
+            </a>
+          </section>
+          <section class="letter col-lg-6 col-md-6 px-3">
+            <img [src]="data.letter.image" class="img-fluid">
+            <div>
+              <p *ngFor="let content of (data.letter.content | locale)" class="text-justify">{{ content }}</p>
+              <p class="signature text-xs-right">
+                <span *ngFor="let signature of (data.letter.signature | locale)">{{ signature }}<br></span>
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

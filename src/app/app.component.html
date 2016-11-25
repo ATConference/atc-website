@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <app-navbar [title]="title" [items]="navItems"></app-navbar>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <app-footer></app-footer>
+</footer>

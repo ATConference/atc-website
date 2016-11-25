@@ -1,0 +1,3 @@
+<div *ngIf="participants">
+  <span *ngFor="let participant of participants; let isLast=last">{{ participant.name | locale }}{{ isLast ? '' : ' ' }}</span>
+</div>

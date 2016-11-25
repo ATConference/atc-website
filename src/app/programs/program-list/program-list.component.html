@@ -1,0 +1,10 @@
+<div class="container">
+  <header *ngIf="category" class="my-2">
+    <h1>{{ category.name | locale }}</h1>
+  </header>
+  <div class="row">
+    <div *ngFor="let program of programs" class="col-md-4 col-sm-4">
+      <app-program [program]="program"></app-program>
+    </div>
+  </div>
+</div>

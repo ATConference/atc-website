@@ -1,0 +1,30 @@
+@import '~bootstrap/scss/custom';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+// @include media-breakpoint-up(md) {
+//   html {
+//     font-size: 20px;
+//   }
+// }
+
+// @include media-breakpoint-up(lg) {
+//   html {
+//     font-size: 28px;
+//   }
+// }

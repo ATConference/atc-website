@@ -1,0 +1,6 @@
+<a class="profile" [routerLink]="[participant.id]">
+  <img class="black img-fluid rounded-circle" [src]="participant.image" [alt]="participant.name | locale" />
+  <header class="mb-2">
+    <h1 class="text-xs-center">{{ participant.name | locale }}</h1>
+  </header>
+</a>

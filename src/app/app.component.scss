@@ -1,0 +1,11 @@
+@import 'scss/common';
+
+header {
+  margin-bottom: $navbar-size;
+}
+
+@include media-breakpoint-up(sm) {
+  header {
+    margin-bottom: $navbar-sm-up-size;
+  }
+}

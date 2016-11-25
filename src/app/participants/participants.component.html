@@ -1,0 +1,2 @@
+<app-category-filter *ngIf="data" [categories]="data.categories" [selected]="selectedCategory" (onSelected)="onCategorySelected($event)"></app-category-filter>
+<app-participant-list *ngIf="filteredParticipants" [category]="selectedCategory" [participants]="filteredParticipants"></app-participant-list>

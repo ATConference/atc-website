@@ -1,0 +1,19 @@
+<nav [ngClass]="{alternative: isAlternative}" class="navbar navbar-fixed-top navbar-light bg-faded">
+  <span class="navbar-text float-xs-right text-muted">
+    <app-language-select class="hidden-xs-down"></app-language-select>
+  </span>
+  <div class="container">
+    <a (click)="isCollapsed = true" routerLink="" class="navbar-brand">
+      <div class="logo"></div>
+    </a>
+    <button [ngClass]="{collapsed: isCollapsed}" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" class="navbar-toggler hidden-sm-up float-xs-right" type="button" aria-controls="navbar-header" aria-label="Toggle navigation"></button>
+    <div [ngbCollapse]="isCollapsed" class="navbar-toggleable-xs" id="navbar-header">
+      <!--<a class="navbar-brand" routerLink=""><div class="logo"></div></a>-->
+      <ul class="nav navbar-nav float-xs-right">
+        <li *ngFor="let item of items" routerLinkActive="active" class="nav-item">
+          <a (click)="isCollapsed = true" [routerLink]="[item.link]" class="nav-link">{{ item.name | locale }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

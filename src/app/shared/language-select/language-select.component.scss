@@ -1,0 +1,7 @@
+span {
+  text-transform: uppercase;
+
+  &.active {
+    font-weight: bold;
+  }
+}

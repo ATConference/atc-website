@@ -1,0 +1,24 @@
+@import '../../scss/common';
+
+.conference {
+  position: relative;
+  float: left;
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  visibility: hidden;
+  color: white;
+}
+
+a:hover {
+  .title {
+    visibility: visible;
+  }
+
+  img {
+    filter: grayscale(100%) brightness(0.5);
+  }
+}

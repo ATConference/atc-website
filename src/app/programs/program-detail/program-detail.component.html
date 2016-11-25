@@ -1,0 +1,26 @@
+<article *ngIf="program">
+  <section class="cover">
+    <app-image-slider [images]="program.images"></app-image-slider>
+  </section>
+  <section class="information text-xs-center">
+    <header class="title">
+      <h1>{{ program.name | locale }}</h1>
+    </header>
+    <section class="artist-name">
+      <h3>
+        <app-program-participant-names [participants]="program.participants"></app-program-participant-names>
+      </h3>
+    </section>
+    <section class="video mx-auto mt-2">
+      <div class="embed-responsive embed-responsive-16by9 video-item">
+        <app-youtube-video [videoId]="program.videoId"></app-youtube-video>
+      </div>
+    </section>
+    <section class="description mx-auto mt-2">
+      <p class="text-justify">{{ program.description | locale }}</p>
+    </section>
+    <section class="artists mx-auto mt-2">
+      <app-program-participant *ngFor="let participant of program.participants" [participant]="participant"></app-program-participant>
+    </section>
+  </section>
+</article>

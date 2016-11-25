@@ -1,0 +1,13 @@
+<article *ngIf="archive">
+  <section class="cover">
+    <app-image-slider [images]="archive.images"></app-image-slider>
+  </section>
+  <section class="information text-xs-center">
+    <section class="title">
+      <h1>{{ archive.name | locale }}</h1>
+    </section>
+    <section class="description mx-auto mt-2">
+      <p class="text-justify">{{ archive.description | locale }}</p>
+    </section>
+  </section>
+</article>

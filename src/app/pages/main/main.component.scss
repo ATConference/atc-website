@@ -1,0 +1,42 @@
+@import '../../scss/common';
+
+.video-overlay {
+  position: absolute;
+  z-index: 1000;
+}
+
+.theme-image {
+  background-image: url(/assets/bg.png), url(/assets/bg_window.png), url(/assets/bg_text.png);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: inherit;
+}
+
+.catalogue {
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  button {
+    margin-top: 0.5rem;
+  }
+}
+
+.fp-section.active .theme-image {
+  margin-top: -$navbar-size;
+}
+
+@include media-breakpoint-up(sm) {
+  .fp-section.active .theme-image {
+    margin-top: -$navbar-sm-up-size;
+  }
+}

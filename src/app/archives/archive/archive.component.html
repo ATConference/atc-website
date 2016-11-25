@@ -1,0 +1,4 @@
+<a class="conference" [routerLink]="['/archives', archive.id]">
+  <img class="img-fluid" [src]="archive.thumbImage" [alt]="archive.name | locale">
+  <h2 class="title text-xs-center">{{ archive.name | locale }}</h2>
+</a>

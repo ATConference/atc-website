@@ -1,0 +1,17 @@
+.black {
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: none;
+  }
+}
+
+header {
+  margin-top: 0.5rem;
+
+  h1 {
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}

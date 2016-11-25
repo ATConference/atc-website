@@ -1,0 +1,4 @@
+<a *ngIf="program" [routerLink]="['/programs', program.id]">
+  <img class="img-program" [src]="program.thumbImage" [alt]="program.name | locale" />
+  <div class="display-title">{{ program.name | locale }}</div>
+</a>

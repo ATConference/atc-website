@@ -1,0 +1,42 @@
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-5">
+        <div id="describe">
+          <h5>{{ data.describe.title | locale }}</h5>
+          <p>{{ data.describe.description | locale }}</p>
+        </div>
+        <div id="contact">
+          <h5>{{ data.contact.title | locale }}</h5>
+          <table>
+            <tbody>
+              <tr *ngFor="let item of data.contact.list">
+                <th>{{ item.name | locale }}</th>
+                <td><a [href]="item.link">{{ item.display }}</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col col-md-4 hidden-xs-down logos">
+        <div id="project">
+          <h5>{{ data.logos.project.title | locale }}</h5>
+          <a [href]="data.logos.project.link" target="_blank">
+            <img [src]="data.logos.project.image" [alt]="data.logos.project.text">
+          </a>
+        </div>
+        <div id="sponsored">
+          <h5>{{ data.logos.sponsor.title | locale }}</h5>
+          <img *ngFor="let item of data.logos.sponsor.items" [src]="item.image" [alt]="item.text">
+        </div>
+      </div>
+      <div class="col col-md-3">
+        <div id="madeby">
+          <p class="hidden-xs-down madeby_design">{{ data.madeby.design | locale }}</p>
+          <p class="hidden-xs-down madeby_web">{{ data.madeby.web | locale }}</p>
+          <p id="copyright">{{ data.madeby.copyright | locale }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

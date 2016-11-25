@@ -1,0 +1,18 @@
+@import '../../scss/common';
+
+.information {
+  padding: 5% 2.5%;
+
+  .name {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .email {
+    h3 {
+      font-size: 1rem;
+      color: #767676;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+<a *ngIf="participant" [routerLink]="['/participants', participant.id]">
+  <img class="img-fluid rounded-circle" [src]="participant.image" [alt]="participant.name | locale" />
+  <p>{{ participant.name | locale }}</p>
+</a>
