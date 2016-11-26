@@ -1,8 +1,7 @@
 import { Component, Input } from '@angular/core';
 
-import { NavbarService } from '../../shared/navbar.service';
-
-import { NavItem } from './nav-item.model';
+import { NavbarService } from '../shared/navbar.service';
+import { NavItem } from '../shared/nav-item.model';
 
 @Component({
   selector: 'app-navbar',

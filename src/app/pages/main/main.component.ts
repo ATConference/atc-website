@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import { MnFullpageOptions, MnFullpageService } from 'ng2-fullpage';
 
-import { NavbarService } from '../../shared/navbar.service';
+import { NavbarService } from '../../core/shared/navbar.service';
 
 import { MAIN_DATA } from './main-data';
 

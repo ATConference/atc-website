@@ -2,7 +2,7 @@ import './rxjs-operators';
 
 import { Component } from '@angular/core';
 
-import { NavItem } from './core/navbar/nav-item.model';
+import { NavItem } from './core/shared/nav-item.model';
 import { NAV_ITEMS } from './nav-items';
 
 @Component({

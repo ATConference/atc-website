@@ -5,6 +5,8 @@ import { SharedModule } from '../shared/shared.module';
 
 import { FooterComponent } from './footer/footer.component';
 
+import { NavbarService } from './shared/navbar.service';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,9 @@ import { FooterComponent } from './footer/footer.component';
   ],
   exports: [
     FooterComponent
+  ],
+  providers: [
+    NavbarService
   ]
 })
 export class CoreModule {

@@ -9,7 +9,6 @@ import { CategoryFilterComponent } from './category-filter/category-filter.compo
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { LanguageSelectComponent } from './language-select/language-select.component';
 import { LocalePipe } from './locale.pipe';
-import { NavbarService } from './navbar.service';
 import { SafePipe } from './safe.pipe';
 import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
 
@@ -35,9 +34,6 @@ import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
     YoutubeVideoComponent,
     SafePipe,
     LocalePipe
-  ],
-  providers: [
-    NavbarService
   ]
 })
 export class SharedModule { }

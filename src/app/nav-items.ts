@@ -1,4 +1,4 @@
-import { NavItem } from './core/navbar/nav-item.model';
+import { NavItem } from './core/shared/nav-item.model';
 
 export const NAV_ITEMS: NavItem[] = [
   {
