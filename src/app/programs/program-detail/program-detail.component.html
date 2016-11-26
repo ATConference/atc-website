@@ -17,7 +17,7 @@
       </div>
     </section>
     <section class="description mx-auto mt-2">
-      <p class="text-justify">{{ program.description | locale }}</p>
+      <p *ngFor="let description of (program.description | locale | split: '\n')" class="text-justify">{{ description }}</p>
     </section>
     <section *ngIf="program.participants.length" class="artists mx-auto mt-2">
       <app-program-participant *ngFor="let participant of program.participants" [participant]="participant"></app-program-participant>

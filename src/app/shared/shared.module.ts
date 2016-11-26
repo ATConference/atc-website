@@ -10,6 +10,7 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { LanguageSelectComponent } from './language-select/language-select.component';
 import { LocalePipe } from './locale.pipe';
 import { SafePipe } from './safe.pipe';
+import { SplitPipe } from './split.pipe';
 import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
 
 @NgModule({
@@ -23,7 +24,8 @@ import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
     LanguageSelectComponent,
     YoutubeVideoComponent,
     SafePipe,
-    LocalePipe,
+    SplitPipe,
+    LocalePipe
   ],
   exports: [
     CommonModule,
@@ -33,6 +35,7 @@ import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
     LanguageSelectComponent,
     YoutubeVideoComponent,
     SafePipe,
+    SplitPipe,
     LocalePipe
   ]
 })
