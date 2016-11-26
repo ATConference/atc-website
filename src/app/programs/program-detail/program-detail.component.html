@@ -6,7 +6,7 @@
     <header class="title">
       <h1>{{ program.name | locale }}</h1>
     </header>
-    <section class="artist-name">
+    <section *ngIf="program.participants.length" class="artist-name">
       <h3>
         <app-program-participant-names [participants]="program.participants"></app-program-participant-names>
       </h3>
@@ -19,7 +19,7 @@
     <section class="description mx-auto mt-2">
       <p class="text-justify">{{ program.description | locale }}</p>
     </section>
-    <section class="artists mx-auto mt-2">
+    <section *ngIf="program.participants.length" class="artists mx-auto mt-2">
       <app-program-participant *ngFor="let participant of program.participants" [participant]="participant"></app-program-participant>
     </section>
   </section>

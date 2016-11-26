@@ -46,7 +46,7 @@ export class ProgramService {
 
   private extractProgram(res: Response) {
     let body = res.json();
-    body.participants = body._embedded.participants || { };
+    body.participants = body._embedded.participants || [ ];
     return body || { };
   }
 
