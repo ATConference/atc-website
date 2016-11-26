@@ -6,9 +6,11 @@ import { Http, Response } from '@angular/http';
 import { ArchiveData } from './archive-data.model';
 import { Archive } from './archive.model';
 
+import { ARCHIVES_URL } from '../../api-config';
+
 @Injectable()
 export class ArchiveService {
-  private archivesUrl = 'api/conferences';
+  private archivesUrl = ARCHIVES_URL;
   private data: ArchiveData;
 
   constructor(private http: Http) { }

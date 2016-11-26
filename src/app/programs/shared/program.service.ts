@@ -7,9 +7,11 @@ import { PROGRAM_CATEGORIES } from './program-categories';
 import { ProgramData } from './program-data.model';
 import { Program } from './program.model';
 
+import { PROGRAMS_URL } from '../../api-config';
+
 @Injectable()
 export class ProgramService {
-  private programsUrl = 'api/programs';
+  private programsUrl = PROGRAMS_URL;
   private data: ProgramData;
 
   constructor(private http: Http) { }

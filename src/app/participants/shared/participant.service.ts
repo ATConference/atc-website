@@ -8,9 +8,11 @@ import { Participant } from './participant.model';
 
 import { PARTICIPANT_CATEGORIES } from './participant-categories';
 
+import { PARTICIPANTS_URL } from '../../api-config';
+
 @Injectable()
 export class ParticipantService {
-  private participantsUrl = 'api/participants';
+  private participantsUrl = PARTICIPANTS_URL;
   private data: ParticipantData;
 
   constructor(private http: Http) { }
