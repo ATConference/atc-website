@@ -1,7 +1,7 @@
 /* tslint:disable:max-line-length */
 
 const youtube = {
-  videoId: 'GKSRyLdjsPA?autoplay=0&showinfo=0&controls='
+  videoId: '1-Affww8s9k?autoplay=0&showinfo=0&controls=0'
 };
 
 const catalogue = {
