@@ -5,5 +5,11 @@
   },
   "ARCHIVES": {
     "TITLE": "Archives"
+  },
+  "LOCATIONS": {
+    "TITLE": "Locations"
+  },
+  "PROGRAMS": {
+    "FLOOR_PLAN": "Floor plan"
   }
 }

@@ -1,2 +1,4 @@
 <app-category-filter *ngIf="data" [categories]="data.categories" [selected]="selectedCategory" (onSelected)="onCategorySelected($event)"></app-category-filter>
 <app-program-list *ngIf="filteredPrograms" [category]="selectedCategory" [programs]="filteredPrograms"></app-program-list>
+<hr>
+<app-floor-plan></app-floor-plan>

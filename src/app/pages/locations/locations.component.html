@@ -1,29 +1,13 @@
-<div class="wrapper py-2">
-  <div class="container">
-    <div class="row">
-      <header class="px-1 mb-2">
-        <h1>{{ data.location.title | locale }}</h1>
-      </header>
-      <section class="mb-1 col-xs-12 col-md-5">
-        <img [src]="data.location.image" class="img-fluid location_jpg">
-        <header class="mt-1">
-          <h3 *ngFor="let name of data.location.name | locale">{{ name }}</h3>
-        </header>
-      </section>
-      <section class="col-xs-12 col-md-7 embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" [src]="data.location.maps | safe" allowfullscreen></iframe>
-      </section>
-    </div>
-  </div>
-  <hr>
-  <div class="container">
-    <div class="row">
-      <header class="px-1 mb-2">
-        <h1>{{ data.floorplan.title | locale }}</h1>
-      </header>
-      <section class="col-xs-12 offset-md-1 col-md-10">
-        <img [src]="data.floorplan.image" class="img-fluid">
-      </section>
-    </div>
+<div class="container py-1">
+  <header class="my-2">
+    <h1>{{ 'LOCATIONS.TITLE' | translate }}</h1>
+  </header>
+  <div class="row">
+    <section class="mb-1 col-xs-12 col-md-5">
+      <img [src]="imageUrl" class="img-fluid">
+    </section>
+    <section class="col-xs-12 col-md-7 embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" [src]="mapsUrl | safe" allowfullscreen></iframe>
+    </section>
   </div>
 </div>

@@ -5,5 +5,11 @@
   },
   "ARCHIVES": {
     "TITLE": "아카이브"
+  },
+  "LOCATIONS": {
+    "TITLE": "위치"
+  },
+  "PROGRAMS": {
+    "FLOOR_PLAN": "플로어 플랜"
   }
 }

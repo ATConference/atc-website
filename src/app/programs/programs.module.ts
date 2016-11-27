@@ -11,6 +11,7 @@ import { ProgramParticipantComponent } from './program-participant/program-parti
 import { ProgramComponent } from './program/program.component';
 import { ProgramsComponent } from './programs.component';
 import { ProgramService } from './shared/program.service';
+import { FloorPlanComponent } from './floor-plan/floor-plan.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { ProgramService } from './shared/program.service';
     ProgramDetailComponent,
     ProgramListComponent,
     ProgramParticipantComponent,
-    ProgramParticipantNamesComponent
+    ProgramParticipantNamesComponent,
+    FloorPlanComponent
   ],
   providers: [
     ProgramService,
