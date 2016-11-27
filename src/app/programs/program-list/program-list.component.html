@@ -3,7 +3,7 @@
     <h1>{{ category.name | locale }}</h1>
   </header>
   <div class="row">
-    <div *ngFor="let program of programs" class="col-md-4 col-sm-4">
+    <div *ngFor="let program of programs" class="col-xs-12 col-sm-6 col-lg-4 mb-2">
       <app-program [program]="program"></app-program>
     </div>
   </div>

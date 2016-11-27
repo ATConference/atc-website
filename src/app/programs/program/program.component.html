@@ -1,6 +1,6 @@
 <a [routerLink]="[program.id]">
   <img class="img-fluid" [src]="program.thumbImage" [alt]="program.name | locale" />
-  <header class="mb-2">
+  <header>
     <h1>{{ program.name | locale }}</h1>
     <h2>
       <app-program-participant-names [participants]="program.participants"></app-program-participant-names>
