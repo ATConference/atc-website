@@ -1,8 +1,13 @@
 @import '../../scss/common';
 
-.conference {
-  position: relative;
-  float: left;
+header {
+  margin-top: 0.5rem;
+
+  h1 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
 }
 
 .title {
@@ -13,12 +18,21 @@
   color: white;
 }
 
-a:hover {
-  .title {
-    visibility: visible;
-  }
+.conference {
+  position: relative;
+  float: left;
+  width: 100%;
 
-  img {
-    filter: grayscale(100%) brightness(0.5);
+  &:hover {
+    .inner {
+      background: #bbb;
+      filter: grayscale(100%) brightness(0.5);
+    }
+
+    .overlay {
+      .title {
+        visibility: visible;
+      }
+    }
   }
 }

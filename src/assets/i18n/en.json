@@ -2,5 +2,8 @@
   "TITLE": "Hello, world!",
   "PARTICIPANT": {
     "PROGRAMS": "Programs"
+  },
+  "ARCHIVES": {
+    "TITLE": "Archives"
   }
 }

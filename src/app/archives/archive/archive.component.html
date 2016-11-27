@@ -1,4 +1,15 @@
 <a class="conference" [routerLink]="['/archives', archive.id]">
-  <img class="img-fluid" [src]="archive.thumbImage" [alt]="archive.name | locale">
-  <h2 class="title text-xs-center">{{ archive.name | locale }}</h2>
+  <div class="inner">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <img class="img-fluid" [src]="archive.thumbImage" [alt]="archive.name | locale">
+      </div>
+      <header class="col-xs-12 col-sm-6 text-xs-center">
+        <h1>{{ archive.name | locale }}</h1>
+      </header>
+    </div>
+  </div>
+  <div class="overlay">
+    <h2 class="title text-xs-center">{{ archive.name | locale }}</h2>
+  </div>
 </a>
