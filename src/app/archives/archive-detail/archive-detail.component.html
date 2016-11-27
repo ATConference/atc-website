@@ -7,7 +7,7 @@
       <h1>{{ archive.name | locale }}</h1>
     </section>
     <section class="description mx-auto mt-2">
-      <p class="text-justify">{{ archive.description | locale }}</p>
+      <p *ngFor="let description of (archive.description | locale | split: '\n')" class="text-justify">{{ description }}</p>
     </section>
   </section>
 </article>
