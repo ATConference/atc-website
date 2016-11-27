@@ -29,11 +29,11 @@
         <div class="row">
           <section class="history col-lg-6 col-md-6">
             <a routerLink="/archives">
-              <img [src]="data.history.image" class="img-fluid">
+              <img [src]="data.history.image | locale" class="img-fluid">
             </a>
           </section>
           <section class="letter col-lg-6 col-md-6 px-3">
-            <img [src]="data.letter.image" class="img-fluid">
+            <img [src]="data.letter.image | locale" class="img-fluid">
             <div>
               <p *ngFor="let content of (data.letter.content | locale)" class="text-justify">{{ content }}</p>
               <p class="signature text-xs-right">

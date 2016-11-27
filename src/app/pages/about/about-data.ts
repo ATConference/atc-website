@@ -36,11 +36,17 @@ const atc2016 = {
 };
 
 const history = {
-  image: '/assets/history.png'
+  image: {
+    en: '/assets/history.png',
+    ko: '/assets/history.png'
+  }
 };
 
 const letter = {
-  image: '/assets/dean.png',
+  image: {
+    en: '/assets/dean.png',
+    ko: '/assets/dean.png'
+  },
   title: {
     en: 'Letter from Chair of Art&Technology',
     ko: '학과장 인사말'
