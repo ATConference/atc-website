@@ -5,6 +5,7 @@ export class Participant {
   name: Object;
   description: Object;
   type: string[];
+  thumbImage: string;
   image: string;
   email: string;
   programs: Program[];
