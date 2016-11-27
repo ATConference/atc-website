@@ -1,19 +1,11 @@
 @import '../../scss/common';
 
 .information {
-  padding: 5% 2.5%;
-
   .artist-name {
     h3 {
       font-size: 1rem;
       color: #999;
     }
-  }
-
-  .video,
-  .description,
-  .artists {
-    max-width: $information-max-width;
   }
 
   .description {

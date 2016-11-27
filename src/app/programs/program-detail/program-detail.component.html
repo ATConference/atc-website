@@ -2,25 +2,29 @@
   <section class="cover">
     <app-image-slider [images]="program.images"></app-image-slider>
   </section>
-  <section class="information text-xs-center">
-    <header class="title">
-      <h1>{{ program.name | locale }}</h1>
-    </header>
-    <section *ngIf="program.participants.length" class="artist-name">
-      <h3>
-        <app-program-participant-names [participants]="program.participants"></app-program-participant-names>
-      </h3>
-    </section>
-    <section class="video mx-auto mt-2">
-      <div class="embed-responsive embed-responsive-16by9 video-item">
-        <app-youtube-video [videoId]="program.videoId"></app-youtube-video>
-      </div>
-    </section>
-    <section class="description mx-auto mt-2">
-      <p *ngFor="let description of (program.description | locale | split: '\n')" class="text-justify">{{ description }}</p>
-    </section>
-    <section *ngIf="program.participants.length" class="artists mx-auto mt-2">
-      <app-program-participant *ngFor="let participant of program.participants" [participant]="participant"></app-program-participant>
-    </section>
-  </section>
+  <div class="container py-2">
+    <div class="row">
+      <section class="information text-xs-center col-xs-12 col-md-10 offset-md-1">
+        <header class="title">
+          <h1>{{ program.name | locale }}</h1>
+        </header>
+        <section *ngIf="program.participants.length" class="artist-name">
+          <h3>
+            <app-program-participant-names [participants]="program.participants"></app-program-participant-names>
+          </h3>
+        </section>
+        <section class="video mt-2">
+          <div class="embed-responsive embed-responsive-16by9 video-item">
+            <app-youtube-video [videoId]="program.videoId"></app-youtube-video>
+          </div>
+        </section>
+        <section class="description mt-2">
+          <p *ngFor="let description of (program.description | locale | split: '\n')" class="text-justify">{{ description }}</p>
+        </section>
+        <section *ngIf="program.participants.length" class="artists mt-2">
+          <app-program-participant *ngFor="let participant of program.participants" [participant]="participant"></app-program-participant>
+        </section>
+      </section>
+    </div>
+  </div>
 </article>

@@ -1,18 +1,20 @@
-<div class="container pt-1">
+<div class="container py-2">
   <article *ngIf="participant">
     <div class="row">
-      <div class="image text-xs-center col-xs-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
-        <img class="rounded-circle img-fluid" [src]="participant.image" [alt]="participant.name | locale" />
-      </div>
-      <div class="information text-xs-center col-xs-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
-        <header class="name">
-          <h1>{{ participant.name | locale }}</h1>
-        </header>
-        <section *ngIf="participant.email" class="email">
-          <h3 class="font-italic">{{ participant.email }}</h3>
+      <div class="text-xs-center col-xs-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
+        <section class="image">
+          <img class="rounded-circle img-fluid" [src]="participant.image" [alt]="participant.name | locale" />
         </section>
-        <section *ngIf="participant.description" class="description">
-          <h3 class="font-italic">{{ participant.description | locale }}</h3>
+        <section class="information mt-2">
+          <header class="name">
+            <h1>{{ participant.name | locale }}</h1>
+          </header>
+          <section *ngIf="participant.email" class="email">
+            <h3 class="font-italic">{{ participant.email }}</h3>
+          </section>
+          <section *ngIf="participant.description" class="description">
+            <h3 class="font-italic">{{ participant.description | locale }}</h3>
+          </section>
         </section>
       </div>
     </div>
