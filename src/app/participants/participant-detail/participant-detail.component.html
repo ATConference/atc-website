@@ -13,7 +13,7 @@
             <h3 class="font-italic">{{ participant.email }}</h3>
           </section>
           <section *ngIf="participant.description" class="description">
-            <h3 class="font-italic">{{ participant.description | locale }}</h3>
+            <h3 *ngFor="let description of (participant.description | locale | split: '\n')" class="font-italic">{{ description }}</h3>
           </section>
         </section>
       </div>
