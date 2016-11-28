@@ -4,16 +4,32 @@ import { MnFullpageOptions, MnFullpageService } from 'ng2-fullpage';
 
 import { NavbarService } from '../../core/shared/navbar.service';
 
-import { MAIN_DATA } from './main-data';
-
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit, OnDestroy {
-  data = MAIN_DATA;
   mnFullpageOptions: MnFullpageOptions;
+
+  catalogue = {
+    text: {
+      en: 'Pre-order Catalogue',
+      ko: '도록 사전예약'
+    },
+    imageUrl: '/assets/catalogue.jpg',
+  };
+
+  slideItems = [
+    {
+      participantId: 59,
+      imageUrl: '/assets/lecture1.jpg'
+    },
+    {
+      participantId: 60,
+      imageUrl: '/assets/lecture2.jpg'
+    }
+  ];
 
   constructor(
     private fullpageService: MnFullpageService,
@@ -26,6 +42,7 @@ export class MainComponent implements OnInit, OnDestroy {
     this.mnFullpageOptions.anchors = [
       'intro', 'video', 'catalogue'
     ];
+    this.mnFullpageOptions.slideSelector = 'fp-slide';
 
     this.mnFullpageOptions.onLeave = (index, nextIndex, direction) => {
       this.navbarService.isAlternative = nextIndex === 1 ? true : false;

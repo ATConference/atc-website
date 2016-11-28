@@ -29,6 +29,7 @@ import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
   ],
   exports: [
     CommonModule,
+    NgbModule,
     TranslateModule,
     CategoryFilterComponent,
     ImageSliderComponent,
