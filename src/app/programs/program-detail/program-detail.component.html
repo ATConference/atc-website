@@ -1,5 +1,5 @@
 <article *ngIf="program">
-  <section class="cover">
+  <section *ngIf="program.images.length" class="cover">
     <app-image-slider [images]="program.images"></app-image-slider>
   </section>
   <div class="container py-2">
@@ -13,7 +13,7 @@
             <app-program-participant-names [participants]="program.participants"></app-program-participant-names>
           </h3>
         </section>
-        <section class="video mt-2">
+        <section *ngIf="program.videoId" class="video mt-2">
           <div class="embed-responsive embed-responsive-16by9 video-item">
             <app-youtube-video [videoId]="program.videoId"></app-youtube-video>
           </div>
