@@ -65,10 +65,6 @@ const logos = {
         text: 'Samsung'
       },
       {
-        image: '/assets/logo-smile-gate.png',
-        text: 'Smilegate'
-      },
-      {
         image: '/assets/logo-moe.png',
         text: 'Ministry of Education'
       }
