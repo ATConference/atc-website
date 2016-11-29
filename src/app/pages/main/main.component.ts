@@ -14,10 +14,13 @@ export class MainComponent implements OnInit, OnDestroy {
 
   catalogue = {
     text: {
-      en: 'Pre-order Catalogue',
-      ko: '도록 사전예약'
+      en: 'Exhibition Catalogue',
+      ko: '전시도록 현장판매'
     },
-    imageUrl: '/assets/catalogue.jpg',
+    imageUrl: {
+      en: '/assets/catalogue_en.jpg',
+      ko: '/assets/catalogue_ko.jpg'
+    }
   };
 
   slideItems = [
