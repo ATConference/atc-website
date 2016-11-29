@@ -23,7 +23,12 @@ const atc2016 = {
     ko: 'Art&Technology Conference 2016'
   },
   content: {
-    en: [],
+    en: [
+      'We all live in great and small fantasies to fill our lives. Sometimes we get trapped by the fantasy created by others or wander around the fantasy of our own. It can be the goal we struggle to reach for, an empty dream, or just a mere illusion dazzling our eyes. However, what is obvious is that every human being has experienced their own space and the world of their own called fantasy. People might imagine paradise existing only in the fairy tale, or just an illusion like a kingdom in the air through the word fantasy. In fact, the difference between the world of paradise and the illusion is only paper-thin, but people suffer from the affliction confusing whether the world is a fantasy or an illusion.',
+      'The fantasy of oneself is the object of familiarity based on one’s own imagination, but at the same time is the object of unfamiliarity as a non-existing world. It is an instinct of human being to pursue the beauty and simultaneously a result of escapism from unbeautiful reality. The definition of fantasy refers to the “empty imagination unrestricted by reality” but fantasy is indeed a source of human’s imagination and it should not be just treated as an empty thought for those people who have struggled to make their own fantasy real. The vagueness of the word fantasy originates from this ambiguity.',
+      'For those who are living in the reality of everyday life, and in each fantasy of their own, this exhibition is asking to you.',
+      'What kind of fantasy indulge your day, is your day full of such fantasies?'
+    ],
     ko: [
       '우리는 모두 크고 작은 환상 속에서 살아갑니다. 때로는 타인이 만들어낸 환상에 갇히기도 하고, 자기 자신이 만들어낸 환상 속에서 허우적거리기도 하죠. 그 환상은 우리가 이루고 싶은 목표일 수도, 그저 허황된 꿈일 수도, 혹은 눈 앞에 일렁이는 단순한 환영일 뿐일지도 모릅니다. 하지만 분명한 것은 인간이라면 누구나 자신만의 환상이라는 공간이자 세계를 경험한다는 것입니다.',
       '사람들은 환상이라는 단어를 통해 동화 속에서만 존재할 법한 낙원을 떠올리기도 하고 그저 속임수에 불과한 환영을 떠올리기도 합니다. 사실 낙원의 세계와 속임수에 불과한 환영은 종이 한 장 차이임에도 불구하고 사람들은 이것이 fantasy인지 illusion인지를 고민하며 괴로워하는 것이죠. 자기 자신의 환상은 자신의 상상에 기초한 것이므로 익숙함의 대상이지만 동시에 현존하지 않는 세계임으로 낯섦의 대상입니다. 또한 아름다움을 쫓는 인간의 본능이면서 동시에 아름답지 않은 현실로부터의 도피의 결과이기도 합니다.',
@@ -65,15 +70,13 @@ const letter = {
   },
   signature: {
     en: [
-      'Jusub Kim, Ph.D.',
+      'Jusub Kim,',
       'Chair, Dept. of Art & Technology,',
-      'Sogang University, Seoul, Republic of Korea',
       'http://creative.sogang.ac.kr'
     ],
     ko: [
-      'Jusub Kim, Ph.D.',
+      'Jusub Kim,',
       'Chair, Dept. of Art & Technology,',
-      'Sogang University, Seoul, Republic of Korea',
       'http://creative.sogang.ac.kr'
     ]
   }
