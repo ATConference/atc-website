@@ -1,6 +1,13 @@
 @import '../../scss/common';
 
 .information {
+  .director-name {
+    h3 {
+      font-size: 1rem;
+      color: #999;
+    }
+  }
+
   .description {
     p {
       line-height: 1.7;

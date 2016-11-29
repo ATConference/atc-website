@@ -8,6 +8,9 @@
         <section class="title">
           <h1>{{ archive.name | locale }}</h1>
         </section>
+        <section class="director-name">
+          <h3>{{ 'ARCHIVES.DIRECTOR' | translate }}: {{ archive.director.name | locale }}</h3>
+        </section>
         <section class="description mt-2">
           <p *ngFor="let description of (archive.description | locale | split: '\n')" class="text-justify">{{ description }}</p>
         </section>

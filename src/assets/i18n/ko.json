@@ -4,7 +4,8 @@
     "PROGRAMS": "작가의 작품들"
   },
   "ARCHIVES": {
-    "TITLE": "아카이브"
+    "TITLE": "아카이브",
+    "DIRECTOR": "Creative Director"
   },
   "LOCATIONS": {
     "TITLE": "위치"
