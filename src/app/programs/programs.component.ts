@@ -7,7 +7,8 @@ import { ProgramService }  from './shared/program.service';
 
 @Component({
   selector: 'app-programs',
-  templateUrl: './programs.component.html'
+  templateUrl: './programs.component.html',
+  styleUrls: ['./programs.component.scss']
 })
 export class ProgramsComponent implements OnInit {
   title = 'Programs';
@@ -39,12 +40,16 @@ export class ProgramsComponent implements OnInit {
   set selectedCategory(category: Category) {
     this._selectedCategory = category;
 
-    if (category.type === 'ALL') {
+    if (this.isCategoryAll(category)) {
       this.filteredPrograms = this.data.programs;
       return;
     }
 
     this.filteredPrograms = this.data.programs.filter(
       program => program.type.find(type => type === category.type));
+  }
+
+  isCategoryAll(category: Category) {
+    return category && category.type === 'ALL';
   }
 }
