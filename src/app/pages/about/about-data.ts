@@ -7,20 +7,20 @@ const about = {
   },
   content: {
     en: [
-      'ATC is an abbreviation for Art&Technology Conference in Sogang University. It is an exhibition and convergence art forum by students in Art&Technology department since 2012, and it now welcomes its 5th event. The purpose of ATC is to provide an opportunity and experience for the future creators to develop their own artworks and share them with the public. Students in Art&Technology shares diverse spheres of activities to bridge Art, Technology, and Humanities which then turns into individual artworks and are exhibited through ATC. Unlike other Graduation Exhibitions, ATC is an event made by the participation of every student of Art&Technology from freshmen to seniors.',
-      'From 2014, ATC adopted the form of thematic exhibition to encourage artists to research and explore about certain abstract and comprehensive subject more deeply, and express their own thinkings on the topic. It makes the audience to get diverse perspectives and interpretations of the artists on same topic and at the same time gives an unity of the exhibition flow. The theme is determined by the Creative Director of the year, and artists research about the topic and develop the direction of their ideas with curators. Web page for archiving, teaser and artist interview films, as well as the decision on Visual Identity for the creation of exhibition space are all planned by the students autonomously. Not just an exhibition, but students also show works they have created from school activities through showcase section, and invite those who work in related fields to seminar to get information of current scene. This is where the specialty of ATC lies in. These efforts of Art&Technology students as a creator will continue here in ATC.'
+      'ATC is an abbreviation for Art & Technology Conference in Sogang University. It is an exhibition and convergence art forum by students in Art & Technology department since 2012, and it now welcomes its 5th event. The purpose of ATC is to provide an opportunity and experience for the future creators to develop their own artworks and share them with the public. Students in Art & Technology shares diverse spheres of activities to bridge Art, Technology, and Humanities which then turns into individual artworks and are exhibited through ATC. Unlike other Graduation Exhibitions, ATC is an event made by the participation of every student of Art & Technology from freshmen to seniors.',
+      'From 2014, ATC adopted the form of thematic exhibition to encourage artists to research and explore about certain abstract and comprehensive subject more deeply, and express their own thinkings on the topic. It makes the audience to get diverse perspectives and interpretations of the artists on same topic and at the same time gives an unity of the exhibition flow. The theme is determined by the Creative Director of the year, and artists research about the topic and develop the direction of their ideas with curators. Web page for archiving, teaser and artist interview films, as well as the decision on Visual Identity for the creation of exhibition space are all planned by the students autonomously. Not just an exhibition, but students also show works they have created from school activities through showcase section, and invite those who work in related fields to seminar to get information of current scene. This is where the specialty of ATC lies in. These efforts of Art & Technology students as a creator will continue here in ATC.'
     ],
     ko: [
-      'ATC는 Art & Technology Conference의 약자로 서강대학교 Art & Technology 학과 학생들의 작품 전시회 및 크리에이티브 포럼으로 2012년 시작해 2016년 제 5회를 맞이하는 행사입니다. ATC의 지향점은 미래의 크리에이터들에게 자신만의 작품을 만들고 대중과 공유하는 경험을 가질 수 있도록 돕는 것 에있습니다. 예술과 기술, 그리고 인문학의 융합 교육을 지향하는 Art & Technology 학과 학생들의 다양한 활동 분야는 ATC를 통해 각자의 작품으로 탄생해 전시됩니다. ATC는 학생들이 주도적으로 기획하고 꾸려나가는 행사로 여타 대학들의 졸업 전시회와는 달리 1학년부터 4학년까지 모든 학생들이 참여합니다.',
-      '2014년 부터는 주제전의 형식을 도입하여 아티스트들이 추상적이고 포괄적인 한 가지 주제에 대해 깊이 탐구하고 자신만의 생각을 표현할 수 있도록 장려하고 있습니다. 이는 관람객들로 하여금 같은 주제에 대한 아티스트들의 다양한 해석과 표현을 볼 수 있게 해주면서 동시에 전시의 흐름에 통일성을 부여합니다. 주제는 그 해의 크리에이티브 디렉터가 확정하며 아티스트들은 주제에 대해 조사하고 큐레이터들과 함께 작품의 방향을 발전시켜 나갑니다. 아카이빙을 위한 홈페이지는 물론 주제에 대한 영상과 전시 티저, 아티스트들의 인터뷰 영상을 제작하고, 포스터와 전시 공간 조성을 위한 VI를 결정하는 것 역시 학생들에 의해 자체적으로 진행됩니다. 작품 전시에서 그치지 않고 Art & Technology 학과 학생들이 학과 활동을 통해 제작한 작품들을 쇼케이스를 통해 보여주기도 하고, 관련 산업에 종사하시는 분들을 초청해 세미나와 강연을 기획하기도 합니다. 2016년 ATC는 “환상” 을 주제로 주제전과 쇼케이스, 과제전 의 형태로 미디어아트, 설치미술, 영상, 애니메이션, 일러스트, 시제품과 게임, VR 등 다양한 장르의 30점이 넘는 작품들이 전시됩니다. ATC의 특별한 점은 바로 여기에 있습니다. 크리에이터로서 Art & Technology 학과 학생들의 이러한 노력은 앞으로도 계속될 것입니다.'
+      'ATC는 Art & Technology Conference의 약자로 서강대학교 Art & Technology 학과 학생들의 작품 전시회 및 크리에이티브 포럼으로 2012년 시작해 2016년 제 5회를 맞이하는 행사입니다. ATC의 지향점은 미래의 크리에이터들에게 자신만의 작품을 만들고 대중과 공유하는 경험을 가질 수 있도록 돕는 것에 있습니다. 예술과 기술, 그리고 인문학의 융합 교육을 지향하는 Art & Technology 학과 학생들의 다양한 활동 분야는 ATC를 통해 각자의 작품으로 탄생해 전시됩니다. ATC는 학생들이 주도적으로 기획하고 꾸려나가는 행사로 여타 대학들의 졸업 전시회와는 달리 1학년부터 4학년까지 모든 학생들이 참여합니다.',
+      '2014년부터는 주제전의 형식을 도입하여 아티스트들이 추상적이고 포괄적인 한 가지 주제에 대해 깊이 탐구하고 자신만의 생각을 표현할 수 있도록 장려하고 있습니다. 이는 관람객들로 하여금 같은 주제에 대한 아티스트들의 다양한 해석과 표현을 볼 수 있게 해주면서 동시에 전시의 흐름에 통일성을 부여합니다. 주제는 그 해의 크리에이티브 디렉터가 확정하며 아티스트들은 주제에 대해 조사하고 큐레이터들과 함께 작품의 방향을 발전시켜 나갑니다. 아카이빙을 위한 홈페이지는 물론 주제에 대한 영상과 전시 티저, 아티스트들의 인터뷰 영상을 제작하고, 포스터와 전시 공간 조성을 위한 VI를 결정하는 것 역시 학생들에 의해 자체적으로 진행됩니다. 작품 전시에서 그치지 않고 Art & Technology 학과 학생들이 학과 활동을 통해 제작한 작품들을 쇼케이스를 통해 보여주기도 하고, 관련 산업에 종사하시는 분들을 초청해 세미나와 강연을 기획하기도 합니다. 2016년 ATC는 “환상” 을 주제로 주제전과 쇼케이스, 과제전의 형태로 미디어아트, 설치미술, 영상, 애니메이션, 일러스트, 시제품과 게임, VR 등 다양한 장르의 30점이 넘는 작품들이 전시됩니다. ATC의 특별한 점은 바로 여기에 있습니다. 크리에이터로서 Art & Technology 학과 학생들의 이러한 노력은 앞으로도 계속될 것입니다.'
     ]
   }
 };
 
 const atc2016 = {
   title: {
-    en: 'Art&Technology Conference 2016',
-    ko: 'Art&Technology Conference 2016'
+    en: 'Art & Technology Conference 2016',
+    ko: 'Art & Technology Conference 2016'
   },
   content: {
     en: [
@@ -39,21 +39,35 @@ const atc2016 = {
   }
 };
 
-const history = {
-  image: {
-    en: '/assets/history.png',
-    ko: '/assets/history.png'
+const chronology = {
+  title: {
+    text: {
+      en: 'Chronology',
+      ko: '연표'
+    },
+    image: {
+      en: '/assets/about/chronology-title_en.png',
+      ko: '/assets/about/chronology-title_ko.png'
+    }
+  },
+  content: {
+    image: {
+      en: '/assets/about/chronology_en.png',
+      ko: '/assets/about/chronology_ko.png'
+    }
   }
 };
 
 const letter = {
-  image: {
-    en: '/assets/dean.png',
-    ko: '/assets/dean.png'
-  },
   title: {
-    en: 'Letter from Chair of Art&Technology',
-    ko: '학과장 인사말'
+    text: {
+      en: 'Letter from Conference Chair',
+      ko: '학과장 인사말'
+    },
+    image: {
+      en: '/assets/about/letter-title_en.png',
+      ko: '/assets/about/letter-title_ko.png'
+    }
   },
   content: {
     en: [
@@ -83,5 +97,5 @@ const letter = {
 };
 
 export const ABOUT_DATA = {
-  about, atc2016, history, letter
+  about, atc2016, chronology, letter
 };

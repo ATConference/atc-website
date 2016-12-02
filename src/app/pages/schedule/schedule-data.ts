@@ -1,13 +1,16 @@
 /* tslint:disable:max-line-length */
 
-const schedule = {
+const timetable = {
   title: {
-    en: 'Schedule',
-    ko: '일정'
+    en: 'Timetable',
+    ko: '시간표'
   },
-  image: '/assets/schedule.png'
+  image: {
+    en: '/assets/schedule/timetable_en.png',
+    ko: '/assets/schedule/timetable_ko.png'
+  }
 };
 
 export const SCHEDULE_DATA = {
-  schedule
+  timetable
 };

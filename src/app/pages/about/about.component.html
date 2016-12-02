@@ -2,7 +2,7 @@
   <section class="introduction">
     <div class="wrapper">
       <div class="container">
-        <article class="py-2">
+        <article class="py-2 my-1">
           <header>
             <h3 class="text-xs-center">{{ data.about.title | locale }}</h3>
           </header>
@@ -14,7 +14,7 @@
   <section class="theme-introduction">
     <div class="wrapper">
       <div class="container">
-        <article class="py-2">
+        <article class="py-2 my-1">
           <header>
             <h3>{{ data.atc2016.title | locale }}</h3>
           </header>
@@ -27,13 +27,20 @@
     <div class="wrapper">
       <div class="container">
         <div class="row">
-          <section class="history col-lg-6 col-md-6">
-            <a routerLink="/archives">
-              <img [src]="data.history.image | locale" class="img-fluid">
-            </a>
+          <section class="chronology col-md-6 py-2 px-3">
+            <header class="my-2">
+              <img [src]="data.chronology.title.image | locale" [alt]="data.chronology.title.text | locale" class="img-fluid">
+            </header>
+            <div>
+              <a routerLink="/archives">
+                <img [src]="data.chronology.content.image | locale" class="img-fluid">
+              </a>
+            </div>
           </section>
-          <section class="letter col-lg-6 col-md-6 px-3">
-            <img [src]="data.letter.image | locale" class="img-fluid">
+          <section class="letter col-md-6 py-2 px-3">
+            <header class="my-2">
+              <img [src]="data.letter.title.image | locale" [alt]="data.letter.title.text | locale" class="img-fluid">
+            </header>
             <div>
               <p *ngFor="let content of (data.letter.content | locale)" class="text-justify">{{ content }}</p>
               <p class="signature text-xs-right">

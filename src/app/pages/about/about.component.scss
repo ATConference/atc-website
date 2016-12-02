@@ -21,7 +21,7 @@
   }
 
   .wrapper {
-    background-image: url(/assets/background2.png);
+    background-image: url(/assets/about/background2.png);
     background-position: 50% 30%;
   }
 }
@@ -41,12 +41,26 @@
   }
 
   .wrapper {
-    background-image: url(/assets/background1.png);
+    background-image: url(/assets/about/background1.png);
     background-position: 50% 35%;
   }
 }
 
+.chronology {
+  header {
+    img {
+      height: 3rem;
+    }
+  }
+}
+
 .letter {
+  header {
+    img {
+      height: 3rem;
+    }
+  }
+
   p {
     font-size: 1rem;
     font-weight: 300;

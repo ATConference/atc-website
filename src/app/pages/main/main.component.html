@@ -11,13 +11,13 @@
   <section class="fp-section">
     <div class="container py-3">
       <div class="col-sm-12 col-lg-6 mb-1 hidden-xs-down">
-        <img [src]="catalogue.imageUrl | locale" [alt]="catalogue.text | locale" class="img-fluid">
+        <img [src]="data.catalogue.image | locale" [alt]="data.catalogue.text | locale" class="img-fluid">
       </div>
       <div class="col-sm-12 col-lg-6">
         <ngb-carousel>
-          <template ngbSlide *ngFor="let item of slideItems">
+          <template ngbSlide *ngFor="let item of data.slide.items">
             <a [routerLink]="['/participants', item.participantId]">
-              <img [src]="item.imageUrl">
+              <img [src]="item.image">
             </a>
           </template>
         </ngb-carousel>

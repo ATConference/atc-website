@@ -4,7 +4,10 @@
   </header>
   <div class="row">
     <section class="col-xs-12 col-md-10 offset-md-1">
-      <img [src]="imageUrl" class="img-fluid">
+      <img [src]="data.floorplan.image | locale" [alt]="data.floorplan.title | locale" class="img-fluid">
+    </section>
+    <section class="col-xs-12 col-md-10 offset-md-1">
+      <img [src]="data.number.image | locale" class="img-fluid">
     </section>
   </div>
 </div>

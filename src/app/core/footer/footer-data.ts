@@ -2,12 +2,12 @@
 
 const describe = {
   title: {
-    en: 'Art&Technology Conference',
-    ko: 'Art&Technology Conference'
+    en: 'Art & Technology Conference',
+    ko: 'Art & Technology Conference'
   },
   description: {
-    en: 'ATC is Art&Technology Conference.',
-    ko: 'ATC는 매년 서강대학교 아트&테크놀로지 학과 학생들의 주도적인 기획 및 참여로 개최되는 작품 전시회 및 교류 컨퍼런스입니다.'
+    en: 'ATC is an annual exhibition and an exchange conference planned and participated by the students in Sogang University, Art & Technology department.',
+    ko: 'ATC는 매년 서강대학교 Art & Technology 학과 학생들의 주도적인 기획 및 참여로 개최되는 작품 전시회 및 교류 컨퍼런스입니다.'
   }
 };
 
@@ -51,7 +51,7 @@ const logos = {
       ko: '기획/운영'
     },
     link: 'http://creative.sogang.ac.kr/',
-    image: '/assets/logo-artech.png',
+    image: '/assets/footer/logo-artech.png',
     text: 'Art & Technology'
   },
   sponsor: {
@@ -61,11 +61,11 @@ const logos = {
     },
     items: [
       {
-        image: '/assets/logo-samsung.png',
+        image: '/assets/footer/logo-samsung.png',
         text: 'Samsung'
       },
       {
-        image: '/assets/logo-moe.png',
+        image: '/assets/footer/logo-moe.png',
         text: 'Ministry of Education'
       }
     ]
@@ -82,8 +82,8 @@ const madeby = {
     ko: '웹 사이트: ATC 기술팀'
   },
   copyright: {
-    en: '© 2016 Art&Technology Conference',
-    ko: '© 2016 Art&Technology Conference'
+    en: '© 2016 Art & Technology Conference',
+    ko: '© 2016 Art & Technology Conference'
   }
 };
 
