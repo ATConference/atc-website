@@ -1,4 +1,6 @@
-<a *ngIf="program" [routerLink]="['/programs', program.id]">
-  <img class="img-program" [src]="program.thumbImage" [alt]="program.name | locale" />
-  <div class="display-title">{{ program.name | locale }}</div>
+<a *ngIf="program" [routerLink]="['/programs', program.id]" class="d-block my-1">
+  <img class="img-fluid" [src]="program.thumbImage" [alt]="program.name | locale" />
+  <header>
+    <h3>{{ program.name | locale }}</h3>
+  </header>
 </a>
