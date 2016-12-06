@@ -4,6 +4,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class SplitPipe implements PipeTransform {
 
   transform(str: string, separator: string) {
-    return str.split(separator)
+    return str.split(separator);
   }
 }
