@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ATConference/atc-website.svg?branch=master)](https://travis-ci.org/ATConference/atc-website)
+
 # AtcWebsite
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
